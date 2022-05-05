@@ -10,5 +10,7 @@ img {
 .four-column-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: max-content;
     grid-gap: 10px;
 }
+
