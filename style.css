@@ -7,6 +7,29 @@ img {
     width: 100%;
 }
 
+.two-column-grid-a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px, 100px, 100px;
+    grid-template-rows: max-content;
+    grid-gap: 10px;
+}
+
+.two-column-grid-b {
+     display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px; 100px, 600px, 600px
+        grid-template-rows: max-content;
+        grid-gap: 10px;
+}
+
+.two-column-grid-c {
+    display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: max-content;
+       grid-gap: 10px;
+}
+
 .four-column-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14,3 +37,120 @@ img {
     grid-gap: 10px;
 }
 
+h1 {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: right;
+    font-size: 75px;
+    font-weight: 700;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 500;
+    padding-right: 20px;
+  }
+
+  li {
+    display: inline-block;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 25px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: blue;
+    color: white;
+  }
+
+  ul {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  footer {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px; 
+    background-color: blue;
+  }
+
+  .logo {
+      padding-top: 20px;
+      padding-left: 20px;
+      grid-column: 1/2;
+      grid-row: 1/3;
+      justify-self: start;
+  }
+
+  .intro {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 20px;
+  }
+
+  .ill {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 30px;
+      padding-left: 20px;
+      font-style: 300;
+  }
+
+  .pho {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    font-style: 300;
+  }
+
+  .scare {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: center;
+      align-self: center;
+  }
+
+  .cat {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .lay {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    font-style: 300;
+    padding-left: 20px;
+
+    .food {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        justify-self: center;
+        align-self: center; 
+    }
+ 
+    .phone {
+        grid-column: 1/2;
+        padding-left: 20px;
+    }
+
+    .email {
+        grid-column: 2/3;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+
+
+  
+
+/* font-family: 'Hind Siliguri', sans-serif; */
+/* font-family: 'Libre Bodoni', serif; */
